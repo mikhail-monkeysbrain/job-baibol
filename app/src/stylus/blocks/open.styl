@@ -1,0 +1,78 @@
+@import '../variables.styl'
+.menu.open
+	width auto !important
+	+media(960px)
+		width 100% !important
+.open
+	width 100%
+	h4
+		margin-top 50px
+	&--job
+		position absolute
+		top 20%
+		z-index 1
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		left 0
+		right 0
+		+media(768px)
+			flex-direction column
+			justify-content center
+			align-items center
+			position relative
+	img
+		+media(960px)
+			opacity .7
+		+media(768px)
+			display none
+	.active
+		color #e31e23
+		box-shadow 0 17px 50px 12px rgba(0, 0, 0, 0.05)
+		border-radius 5px
+		background-color #fcfcfc
+		padding 15px
+		button
+			width 181px
+			height 47px
+			border-radius 5px
+			background-color #e31e23
+			color #fff
+			line-height 47px
+			margin-top 10px
+			cursor pointer
+	&--main,
+	&--slave
+		max-width 215px
+		+media(1440px)
+			left 10%
+		+media(768px)
+			margin-top 2em
+		ul
+			display block 
+			text-align center
+			margin-top 20px
+			li
+				&:nth-last-child(1)
+					&::after
+						display none
+				&::after
+					content ''
+					display block
+					width 20px
+					height 20px
+					background: url('../img/arrow.png') center no-repeat
+					background-size cover
+					transform rotate(90deg)
+					margin 10px auto
+	&--slave
+		left auto
+		right 20%
+		+media(1440px)
+			right 10%
+		+media(768px)
+			margin-bottom 2em

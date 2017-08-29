@@ -1,0 +1,64 @@
+@import '../variables.styl'
+
+.how-to
+	background: #fff
+	padding 50px 0
+	
+.steps
+	display flex
+	justify-content space-around
+	align-items center
+	+media(960px)
+		flex-wrap wrap
+.step
+	display flex
+	flex-direction column
+	justify-content center
+	align-items center
+	position relative
+	margin-bottom 5em
+	+media(960px)
+		width 45%
+	+media(480px)
+		width 90%
+		margin-bottom 2em
+	&__after,
+	&__before
+		display block
+		position absolute
+		right -25%
+		top 10%
+		width: 19px
+		height: 26px
+		background url('../img/arrow.svg')
+		background-size cover
+	&__before
+		right calc(-25% - 10px)
+		+media(1100px)
+			right -15%
+		+media(960px)
+			display none
+	&__after
+		+media(1100px)
+			right calc(-15% - 10px)
+		+media(960px)
+			display none
+	&__number
+		width 78px
+		height 78px
+		color #696969
+		border 1px solid
+		font-family: "Vida21Pro"
+		font-size: 40px
+		line-height 78px
+		text-align center
+		border-radius 50%
+		margin-bottom 46px
+	&__header
+		font-family: "Vida21Pro"
+		font-weight: 400
+		color: #a0142d
+		font-size: 32px
+	&__description
+		color: #424242
+		font-size: 19px 

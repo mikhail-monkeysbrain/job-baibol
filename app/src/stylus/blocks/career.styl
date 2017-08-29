@@ -1,0 +1,61 @@
+@import '../variables.styl'
+.career
+	background url(../img/review.jpg) center no-repeat
+	background-size cover
+	width 100%
+	padding-top 74px
+	padding-bottom 180px
+	.right
+		margin-left 125px
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		justify-content space-between
+	button
+		width 283px
+		height 61px
+		border-radius 5px
+		background-color #e31e23
+		color #fff
+	.content
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		+media(1200px)
+			flex-direction column
+			justify-content center
+			align-items center
+	ul
+		display block
+		margin-top 90px
+		width 100%
+		+media(1200px)
+			margin-bottom 2em
+			margin-left -25px
+		li
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			&::before
+				content ''
+				width 27px
+				height 25px
+				background: url('../img/li.png') center no-repeat
+				background-size cover
+				margin 10px
+	p
+		text-align center
+.video
+	margin-top 90px
+	box-shadow 0 17px 50px 12px rgba(0, 0, 0, .5)
+	border-radius 7px
+	width 593px
+	height 418px 

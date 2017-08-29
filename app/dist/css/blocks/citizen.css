@@ -1,0 +1,49 @@
+.citizen {
+  background: url("../img/citizen.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 420px;
+}
+@media screen and (max-width: 1600px) {
+  .citizen__header {
+    background: rgba(255,255,255,0.5);
+    padding: 30px;
+    border-radius: 10px;
+  }
+}
+.citizen p {
+  color: #424242;
+  font-family: "Vida22Pro";
+  font-size: 24px;
+  font-weight: 400;
+}
+.summ {
+  color: #a0142d;
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Vida21Pro";
+}
+.block__absolute__right {
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  right: 0;
+  top: 0;
+}
+@media screen and (max-width: 960px) {
+  .block__absolute__right {
+    left: 0;
+    width: 100%;
+  }
+}

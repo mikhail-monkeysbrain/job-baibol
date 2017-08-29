@@ -1,0 +1,129 @@
+.loan {
+  background: #fafafa url("../img/texture.png") left top repeat;
+  background-size: 100%;
+  padding: 50px 0;
+}
+.loan__red {
+  background: #fafafa url("../img/text__red.png") left top repeat;
+  background-color: #a0142d;
+}
+.package {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 960px) {
+  .package {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.package----about,
+.package--info {
+  width: 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+@media screen and (max-width: 960px) {
+  .package----about,
+  .package--info {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .package--about {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+.package--about__header {
+  font-family: "Vida22Pro";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 960px) {
+  .package--about__header {
+    text-align: center;
+  }
+}
+.package--info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.package--info__section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 480px) {
+  .package--info__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.circle {
+  width: 142px;
+  height: 142px;
+  background: #fff;
+  border-radius: 50%;
+  color: #a0142d;
+  border: 1px solid;
+  text-align: center;
+  line-height: 142px;
+  font-size: 43px;
+  margin-bottom: 0.25em;
+}

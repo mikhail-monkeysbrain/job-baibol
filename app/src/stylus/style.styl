@@ -1,0 +1,174 @@
+@import helpers
+@import variables
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+/*start header*/
+@import 'blocks/header.styl'
+/*end header*/
+ 
+
+/*start footer*/
+@import 'blocks/footer.styl'
+/*end footer*/
+
+*
+	box-sizing border-box
+
+html
+	//font-size 1vw
+	margin 0
+	padding 0
+	font-size 18px
+body
+	font-family: 'vida22pro'
+	background #fff
+	color: #424242
+	overflow-x hidden
+	//background: url('../img/text2.png') center top repeat
+a
+	color: inherit
+	text-decoration none
+	/*&:visited
+		color: inherit*/
+article
+	text-align center
+	font-family: "Vida21Pro"
+	font-size: 19px
+p
+	margin 1em 0
+	font-family: "Vida21Pro"
+h2
+	
+	text-align center
+	color: #424242
+	font-family: "Vida22Pro"
+	font-size: 32px
+	font-weight: 400
+	margin-bottom 60px
+h3
+	color #e31e23
+	font-family "Vida22Pro"
+	font-size 35px
+	font-weight 700
+	text-align center
+h4
+	color #404040
+	font-family "Vida22Pro"
+	font-size 35px
+	font-weight 700
+	text-align center
+
+ul
+	display flex
+	align-items center
+	li
+		list-style none
+
+/*foundation*/		
+
+.content
+	max-width 1200px
+	width 100%
+	margin 0 auto
+	position relative
+	
+section
+	position relative
+	width 100%
+
+/*start top*/
+@import 'blocks/top.styl'
+/*end top*/
+
+/*start job*/
+@import 'blocks/job.styl'
+/*end job*/ 
+
+/*start career*/
+@import 'blocks/career.styl'
+/*end career*/
+
+/*start open*/
+@import 'blocks/open.styl'
+/*end open*/
+
+/*start loan*/
+@import 'blocks/loan.styl'
+/*end loan*/
+
+/*start citizen*/
+@import 'blocks/citizen.styl'
+/*end citizen*/
+
+/*start how-to*/
+@import 'blocks/how-to.styl'
+/*end how-to*/
+
+/*start review*/
+@import 'blocks/review.styl'
+/*end review*/
+
+/*start office*/
+@import 'blocks/office.styl'
+/*end office*/
+
+
+.bold__red
+	font-family: "Vida22Pro"
+	font-size: 32px
+	color: red
+
+ 
+.btn
+	cursor pointer
+	width: 220px
+	height: 45px
+	&__center
+		margin 0 auto
+	&__gray
+		cursor pointer
+		border-radius: 5px
+		background #777
+		font-family: 'vida21pro'
+		text-align: center
+		color: #fff
+		line-height: 45px
+		border 2px solid #b5b5b5
+	&__red
+		cursor pointer
+		width: 220px
+		height: 45px
+		border-radius: 5px
+		background #9b1414
+		font-family: 'vida21pro'
+		text-align: center
+		color: #fff
+		line-height: 45px
+		border 2px solid red
+		transition animation
+		margin 0
+		&:hover
+			border 2px solid red
+			color red
+			background #fff
+		&__invert
+			border 2px solid #fff
+			color #fff
+			background: transparent
+		&__white
+			border 2px solid red
+			color red
+			background: #fff
+			
+.small
+	width: calc(100% / 3 - 2.5em)
+	margin-right 2.5em
+	+media(960px)
+		width 100%
+		margin 0 auto
+.large
+	width: calc(100% / 3 * 2 - 2.5em)
+	margin-left 2.5em
+	+media(960px)
+		width 90%
+		margin 0 auto 2em

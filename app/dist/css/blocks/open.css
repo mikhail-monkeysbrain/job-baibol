@@ -1,0 +1,132 @@
+.menu.open {
+  width: auto !important;
+}
+@media screen and (max-width: 960px) {
+  .menu.open {
+    width: 100% !important;
+  }
+}
+.open {
+  width: 100%;
+}
+.open h4 {
+  margin-top: 50px;
+}
+.open--job {
+  position: absolute;
+  top: 20%;
+  z-index: 1;
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .open--job {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+}
+@media screen and (max-width: 960px) {
+  .open img {
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .open img {
+    display: none;
+  }
+}
+.open .active {
+  color: #e31e23;
+  -webkit-box-shadow: 0 17px 50px 12px rgba(0,0,0,0.05);
+          box-shadow: 0 17px 50px 12px rgba(0,0,0,0.05);
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  padding: 15px;
+}
+.open .active button {
+  width: 181px;
+  height: 47px;
+  border-radius: 5px;
+  background-color: #e31e23;
+  color: #fff;
+  line-height: 47px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.open--main,
+.open--slave {
+  max-width: 215px;
+}
+@media screen and (max-width: 1440px) {
+  .open--main,
+  .open--slave {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .open--main,
+  .open--slave {
+    margin-top: 2em;
+  }
+}
+.open--main ul,
+.open--slave ul {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+.open--main ul li:nth-last-child(1)::after,
+.open--slave ul li:nth-last-child(1)::after {
+  display: none;
+}
+.open--main ul li::after,
+.open--slave ul li::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrow.png") center no-repeat;
+  background-size: cover;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 10px auto;
+}
+.open--slave {
+  left: auto;
+  right: 20%;
+}
+@media screen and (max-width: 1440px) {
+  .open--slave {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .open--slave {
+    margin-bottom: 2em;
+  }
+}

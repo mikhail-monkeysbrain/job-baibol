@@ -1,0 +1,61 @@
+@import '../variables.styl'
+
+.loan
+	background #fafafa url('../img/texture.png') left top repeat
+	background-size 100%
+	padding 50px 0
+	&__red
+		
+		background #fafafa url('../img/text__red.png') left top repeat
+		background-color: red
+.package
+	display flex
+	justify-content space-between
+	+media(960px)
+		flex-direction column
+		justify-content center
+		align-items center
+	&----about,
+	&--info
+		width 50%
+		flex-shrink 0
+		+media(960px)
+			width 90%
+	&--about
+		+media(960px)
+			text-align center
+			width 95%
+			margin 0 auto
+		&__header
+			font-family: "Vida22Pro"
+			font-size: 32px
+			font-weight: 400
+			margin-bottom 60px
+			+media(960px)
+				text-align center
+	&--info
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		&__section
+			display flex
+			justify-content space-around
+			align-items center
+			margin-bottom 2em
+			+media(480px)
+				flex-direction column
+				align-items center
+				justify-content center
+
+.circle
+	width 142px
+	height 142px
+	background: #fff
+	border-radius 50%
+	color: red
+	border 1px solid
+	text-align center
+	line-height 142px
+	font-size 43px
+	margin-bottom .25em

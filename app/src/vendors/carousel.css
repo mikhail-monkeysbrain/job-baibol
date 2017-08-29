@@ -1,0 +1,36 @@
+.owl-carousel{
+position: relative;
+}
+.owl-nav {
+display: flex;
+justify-content: space-between;
+width: calc(100% + 36px + 20px);
+position: absolute;
+left: calc(-16px - 10px);
+top: calc(50% - 19px - 1em);
+}
+.owl-dots {
+display: flex;
+width: 50%;
+margin: 1em auto;
+justify-content: center;
+position: relative;
+}
+.owl-dot{
+width: 10px;
+height: 10px;
+margin: 5px;
+background: #ababab;
+border-radius: 50%;
+transition: .5s ease;
+}
+.owl-dot:hover{
+background: #cbcbcb
+}
+.owl-dot.active{
+width: 10px;
+height: 10px;
+margin: 5px;
+background: #999999;
+border-radius: 50%;
+}

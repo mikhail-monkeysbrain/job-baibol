@@ -1,0 +1,38 @@
+@import '../variables.styl'
+
+.citizen
+	background: url('../img/citizen.jpg') no-repeat center
+	background-size cover
+	min-height 420px
+	&__header
+		+media(1600px)
+			background: rgba(255,255,255,.5)
+			padding: 30px
+			border-radius: 10px
+	p
+		color: #424242
+		font-family: "Vida22Pro"
+		font-size: 24px
+		font-weight: 400
+		
+.summ
+	color: red
+	font-size: 80px
+	font-weight: 400
+	font-family: "Vida21Pro"
+	
+
+.block
+	&__absolute
+		&__right
+			height 100%
+			position absolute
+			display flex
+			align-items center
+			justify-content center
+			width 50%
+			right 0
+			top 0
+			+media(960px)
+				left 0
+				width 100%

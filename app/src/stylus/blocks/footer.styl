@@ -1,0 +1,87 @@
+@import '../variables.styl'
+
+footer
+	background url('../img/footer.jpg') top left no-repeat
+	background-size cover
+	padding: 50px 0 65px
+	position relative
+	+media(960px)
+		padding-bottom 2em
+	.content
+		display flex
+		justify-content space-between
+		align-items center
+		+media(960px)
+			flex-direction column-reverse
+.footer
+	.logo
+		+media(960px)
+			display none
+	&__phone
+		margin-top 1em
+		color: #891b30
+		font-family: "Vida22Pro"
+		font-size: 36px
+		font-weight: 400
+		line-height 1
+		display block
+		+media(960px)
+			display none
+		span
+			font-family: "Vida21Pro"
+			font-size: 14px
+			font-weight: 600
+			line-height 1
+			display inherit
+	&__time
+		font-size: 18px
+		font-family: "Vida21Pro"
+		+media(960px)
+			display none
+		span
+			font-size: 36px 
+	&__social
+		display flex
+		justify-content space-between
+		align-items center
+		a
+			background lightgray*0.8
+			padding 8px
+			border-radius 50%
+			margin 0 5px
+			flex-shrink 0
+			flex-grow 0
+			width 47px
+			height 47px
+			display flex
+			justify-content center
+			align-items center
+			+media(480px)
+				margin 0 2px
+				padding 0
+		i
+			color #fff
+			font-size 25px 
+	&__buttons
+		width 100%
+		display flex
+		justify-content space-between
+		align-items center
+		+media(480px)
+			flex-direction column
+			.btn
+				margin .5em 0
+	&__links
+		display flex
+		justify-content space-between
+		align-items center
+		+media(480px)
+			flex-direction column
+			a
+				margin 1em 0
+		a
+			color: #424242
+			font-family: "Vida22Pro"
+			font-size: 16px
+			font-weight: 400
+			text-decoration: underline
