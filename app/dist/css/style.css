@@ -1368,6 +1368,9 @@ section {
 .open {
   width: 100%;
 }
+.open button {
+  display: none;
+}
 .open h4 {
   margin-top: 50px;
 }
@@ -1425,6 +1428,7 @@ section {
   border-radius: 5px;
   background-color: #fcfcfc;
   padding: 15px;
+  padding-bottom: 0;
 }
 .open .active button {
   width: 181px;
@@ -1435,6 +1439,7 @@ section {
   line-height: 47px;
   margin-top: 10px;
   cursor: pointer;
+  display: block;
 }
 .open--main,
 .open--slave {
@@ -1474,6 +1479,29 @@ section {
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   margin: 10px auto;
+}
+.open--main ul li.active,
+.open--slave ul li.active {
+  margin-bottom: 60px;
+}
+.open--main ul li.active:nth-last-child(1)::after,
+.open--slave ul li.active:nth-last-child(1)::after {
+  display: none;
+}
+.open--main ul li.active::after,
+.open--slave ul li.active::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/arrow.png") center no-repeat;
+  background-size: cover;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 10px auto;
+  position: relative;
+  top: 45px;
 }
 .open--slave {
   left: auto;

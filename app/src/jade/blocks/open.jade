@@ -6,18 +6,28 @@ section#open.open
 		.open--main
 			h3 Головной офис
 			ul
-				li Директор департамента
-				li Руководитель отдела
-				li Ведущий специалист
-				li Главный специалист
-				li Специалист
-				li Стажер
+				li(data-job="prof") Директор департамента
+					button Откликнуться
+				li(data-job="prof") Руководитель отдела
+					button Откликнуться
+				li(data-job="prof") Ведущий специалист
+					button Откликнуться
+				li(data-job="prof") Главный специалист
+					button Откликнуться
+				li(data-job="start") Специалист
+					button Откликнуться
+				li(data-job="junior") Стажер
+					button Откликнуться
 		.open--slave
 			h3 Головной офис
 			ul
-				li Управляющий офисом
-				li Заместитеть управляющего офисом
-				li Администратор
-				li Кредитный менеджер
-				li.active Стажер
+				li.js-job(data-job="prof") Управляющий офисом
+					button Откликнуться
+				li.js-job(data-job="prof") Заместитеть управляющего офисом
+					button Откликнуться
+				li.js-job(data-job="prof") Администратор
+					button Откликнуться
+				li.js-job.active(data-job="start") Кредитный менеджер
+					button Откликнуться
+				li.js-job(data-job="junior") Стажер
 					button Откликнуться

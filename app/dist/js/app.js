@@ -1,3 +1,5 @@
+var fixed_offset = 100;
+
 $(document).ready(function(){
 	$(".slider").owlCarousel({
     loop:true,
@@ -33,7 +35,6 @@ $(function(){
 
 $(document).ready(function() {
   $("nav").on('click', '[href*="#"]', function(e){
-    var fixed_offset = 100;
     $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
     e.preventDefault();
     $('.menu').toggleClass('open');
@@ -64,7 +65,16 @@ $(function(){
   });
 });
 
-$( function() {
-  $( ".tabs" ).tabs();
-  $( ".tabs" ).tabs();
-} );
+
+$(function() {
+  $(".tabs").tabs();
+});
+
+$(function(){
+  $('.js-job button').click(function(f){
+    var attrib = $(this).parent('.js-job').attr('data-job');
+    $("." + attrib).trigger( "click" );
+    $('html,body').stop().animate({ scrollTop: $('#job').offset().top - fixed_offset }, 1000);
+    f.preventDefault();
+  });
+});

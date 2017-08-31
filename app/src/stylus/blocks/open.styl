@@ -5,6 +5,8 @@
 		width 100% !important
 .open
 	width 100%
+	button
+		display none
 	h4
 		margin-top 50px
 	&--job
@@ -36,6 +38,7 @@
 		border-radius 5px
 		background-color #fcfcfc
 		padding 15px
+		padding-bottom 0
 		button
 			width 181px
 			height 47px
@@ -45,6 +48,7 @@
 			line-height 47px
 			margin-top 10px
 			cursor pointer
+			display block
 	&--main,
 	&--slave
 		max-width 215px
@@ -69,6 +73,22 @@
 					background-size cover
 					transform rotate(90deg)
 					margin 10px auto
+				&.active
+					&:nth-last-child(1)
+						&::after
+							display none
+					margin-bottom 60px
+					&::after
+						content ''
+						display block
+						width 20px
+						height 20px
+						background: url('../img/arrow.png') center no-repeat
+						background-size cover
+						transform rotate(90deg)
+						margin 10px auto
+						position relative
+						top 45px
 	&--slave
 		left auto
 		right 20%

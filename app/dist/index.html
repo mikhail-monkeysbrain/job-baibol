@@ -48,9 +48,9 @@
   <section id="job" class="job content">
     <div class="tabs">
       <ul class="job--depth-1">
-        <li><a href="#tabs-1">Пройти стажировку</a></li>
-        <li><a href="#tabs-2">Начать карьеру</a></li>
-        <li><a href="#tabs-3">Профессионалам</a></li>
+        <li><a href="#tabs-1" class="junior">Пройти стажировку</a></li>
+        <li><a href="#tabs-2" class="start">Начать карьеру</a></li>
+        <li><a href="#tabs-3" class="prof">Профессионалам</a></li>
       </ul>
       <div id="tabs-1">
         <div class="tabs content">
@@ -678,62 +678,8 @@
     </div>
     <div class="job--hot">Горячая вакансия!</div>
   </section>
-  <section id="career" class="career">
-    <h3>Карьера в «Байбол»</h3>
-    <p>Компания Байбол — уникальное место, где можно начать или продолжить карьеру.</p>
-    <div class="content">
-      <div class="video"><iframe width="593" height="418" src="https://www.youtube.com/embed/VoA-aQu75Xk" frameborder="0" allowfullscreen></iframe></div>
-      <div class="right">
-        <ul>
-          <li>полностью проявить себя и свои способности</li>
-          <li>получить неоценимый опыт</li>
-          <li>реализовать возможности личного и<br/>профессионального роста и сделать карьеру</li>
-          <li>полностью проявить себя и свои способности</li>
-          <li>получить неоценимый опыт</li>
-          <li>реализовать возможности личного и<br/>профессионального роста и сделать карьеру</li>
-        </ul>
-        <button>Откликнуться</button>
-      </div>
-    </div>
-  </section>
-  <section id="section-4" class="review"> 
-    <div class="content">
-      <h3>Отзывы наших сотрудников</h3>
-      <div class="owl-carousel slider">
-        <div class="review--item">
-          <article>
-            <iframe width="311" height="219" src="https://www.youtube.com/embed/VoA-aQu75Xk" frameborder="0" allowfullscreen=""></iframe>
-            <div class="review--item--author">Асмира</div>
-            <p class="text__center">О работе в банке</p>
-          </article>
-        </div>
-        <div class="review--item">
-          <article>
-            <iframe width="311" height="219" src="https://www.youtube.com/embed/VoA-aQu75Xk" frameborder="0" allowfullscreen=""></iframe>
-            <div class="review--item--author">Асмира</div>
-            <p class="text__center">О работе в банке</p>
-          </article>
-        </div>
-        <div class="review--item">
-          <article>
-            <iframe width="311" height="219" src="https://www.youtube.com/embed/VoA-aQu75Xk" frameborder="0" allowfullscreen=""></iframe>
-            <div class="review--item--author">Асмира</div>
-            <p class="text__center">О работе в банке</p>
-          </article>
-        </div>
-        <div class="review--item">
-          <article>
-            <iframe width="311" height="219" src="https://www.youtube.com/embed/VoA-aQu75Xk" frameborder="0" allowfullscreen=""></iframe>
-            <div class="review--item--author">Асмира</div>
-            <p class="text__center">О работе в банке</p>
-          </article>
-        </div>
-      </div>
-    </div>
-    <section>
-      <p>Больше вакансий на сайте</p><br/><a href="https://baibol.ru/" class="baibol">baibol.ru</a><a href="https://baibol.ru/" class="button">Перейти</a>
-    </section>
-  </section>
+  <!--include blocks/career-->
+  <!--include blocks/review-->
   <section id="open" class="open">
     <h4>Открытые вакансии</h4>
     <div class="text__center"><img src="img/open.png" alt=""/></div>
@@ -741,22 +687,42 @@
       <div class="open--main">
         <h3>Головной офис</h3>
         <ul>
-          <li>Директор департамента</li>
-          <li>Руководитель отдела</li>
-          <li>Ведущий специалист</li>
-          <li>Главный специалист</li>
-          <li>Специалист</li>
-          <li>Стажер</li>
+          <li data-job="prof">Директор департамента
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="prof">Руководитель отдела
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="prof">Ведущий специалист
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="prof">Главный специалист
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="start">Специалист
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="junior">Стажер
+            <button>Откликнуться</button>
+          </li>
         </ul>
       </div>
       <div class="open--slave">
         <h3>Головной офис</h3>
         <ul>
-          <li>Управляющий офисом</li>
-          <li>Заместитеть управляющего офисом</li>
-          <li>Администратор</li>
-          <li>Кредитный менеджер</li>
-          <li class="active">Стажер
+          <li data-job="prof" class="js-job">Управляющий офисом
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="prof" class="js-job">Заместитеть управляющего офисом
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="prof" class="js-job">Администратор
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="start" class="js-job active">Кредитный менеджер
+            <button>Откликнуться</button>
+          </li>
+          <li data-job="junior" class="js-job">Стажер
             <button>Откликнуться</button>
           </li>
         </ul>
