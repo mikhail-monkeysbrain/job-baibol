@@ -184,13 +184,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 72px;
-}
-@media screen and (max-width: 960px) {
-  .job--depth-2 {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .job--depth-2 li {
   height: 63px;
@@ -198,6 +194,7 @@
   border: 1px solid #e31e23;
   width: 24%;
   position: relative;
+  margin-top: 1em;
 }
 @media screen and (max-width: 960px) {
   .job--depth-2 li {
