@@ -73,7 +73,10 @@ $(function() {
 $(function(){
   $('.js-job button').click(function(f){
     var attrib = $(this).parent('.js-job').attr('data-job');
+    var attrib2 = $(this).parent('.js-job').attr('data-depth-2');
+    console.log(attrib2);
     $("." + attrib).trigger( "click" );
+    $("." + attrib2).trigger( "click" );
     $('html,body').stop().animate({ scrollTop: $('#job').offset().top - fixed_offset }, 1000);
     f.preventDefault();
   });
