@@ -6,6 +6,8 @@
 		padding-top 300px
 	button
 		margin-top 50px
+		+media(480px)
+			margin 50px auto 0
 	&--hot
 		position absolute
 		right 0
@@ -76,6 +78,10 @@
 			+media(960px)
 				width 50%
 				margin 1em 
+			+media(740px)
+				width 70%
+			+media(480px)
+				width 90%
 			&.ui-state-active
 				background: url('../img/active.jpg') center no-repeat
 				background-size cover

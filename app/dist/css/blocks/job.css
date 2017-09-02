@@ -9,6 +9,11 @@
 .job button {
   margin-top: 50px;
 }
+@media screen and (max-width: 480px) {
+  .job button {
+    margin: 50px auto 0;
+  }
+}
 .job--hot {
   position: absolute;
   right: 0;
@@ -119,6 +124,16 @@
   .job--depth-1 li {
     width: 50%;
     margin: 1em;
+  }
+}
+@media screen and (max-width: 740px) {
+  .job--depth-1 li {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .job--depth-1 li {
+    width: 90%;
   }
 }
 .job--depth-1 li.ui-state-active {

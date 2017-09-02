@@ -265,6 +265,8 @@ nav {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 640px) {
@@ -490,7 +492,7 @@ nav {
     display: block;
     left: 0;
     right: 0;
-    margin: 1em auto 0;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 640px) {
@@ -567,7 +569,9 @@ nav {
   .contacts {
     position: relative;
     right: auto;
-    top: auto;
+    top: 15px;
+    background: #fff;
+    padding: 1em;
   }
 }
 .contacts a {
@@ -578,6 +582,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 960px) {
+  .contacts a {
+    font-size: 24px;
+  }
 }
 .contacts a span {
   margin-left: 1em;
@@ -869,6 +878,12 @@ section {
 .top img {
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .top img {
+    width: 150%;
+    margin-left: -25%;
+  }
+}
 .top--team {
   width: 438px;
   height: 250px;
@@ -915,6 +930,12 @@ section {
     margin-bottom: -125px;
   }
 }
+@media screen and (max-width: 480px) {
+  .top--team {
+    width: 100%;
+    font-size: 40px;
+  }
+}
 .top .btn__top-team {
   width: 194px;
   height: 45px;
@@ -939,6 +960,11 @@ section {
 }
 .job button {
   margin-top: 50px;
+}
+@media screen and (max-width: 480px) {
+  .job button {
+    margin: 50px auto 0;
+  }
 }
 .job--hot {
   position: absolute;
@@ -1050,6 +1076,16 @@ section {
   .job--depth-1 li {
     width: 50%;
     margin: 1em;
+  }
+}
+@media screen and (max-width: 740px) {
+  .job--depth-1 li {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .job--depth-1 li {
+    width: 90%;
   }
 }
 .job--depth-1 li.ui-state-active {

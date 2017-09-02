@@ -23,6 +23,8 @@ nav
 	align-items flex-end
 	+media(960px)
 		justify-content space-between
+		width 95%
+		margin 0 auto
 	+media(640px)
 		padding 0 20px
 	.contacts
@@ -170,7 +172,7 @@ nav
 		display block
 		left 0
 		right 0
-		margin 1em auto 0
+		margin 0 auto
 	+media(640px)
 		left auto
 		right 20px
@@ -215,13 +217,17 @@ nav
 	+media(960px)
 		position relative
 		right auto
-		top auto
+		top 15px
+		background #fff
+		padding 1em
 	a
 		display -webkit-flex
 		display -moz-flex
 		display -ms-flex
 		display -o-flex
 		display flex
+		+media(960px)
+			font-size 24px
 		span
 			margin-left 1em
 			+media(960px)

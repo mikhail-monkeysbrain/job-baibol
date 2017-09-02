@@ -5,6 +5,12 @@
 .top img {
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .top img {
+    width: 150%;
+    margin-left: -25%;
+  }
+}
 .top--team {
   width: 438px;
   height: 250px;
@@ -49,6 +55,12 @@
     top: 0;
     bottom: 0;
     margin-bottom: -125px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top--team {
+    width: 100%;
+    font-size: 40px;
   }
 }
 .top .btn__top-team {
