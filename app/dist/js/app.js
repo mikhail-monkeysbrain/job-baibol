@@ -81,3 +81,10 @@ $(function(){
     f.preventDefault();
   });
 });
+
+//location
+
+$(".form-select").change(function(){
+  var bodyClass = this.options[this.selectedIndex].value;
+  $('body').toggleClass(bodyClass);
+});
