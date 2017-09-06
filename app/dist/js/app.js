@@ -88,3 +88,18 @@ $(".form-select").change(function(){
   var bodyClass = this.options[this.selectedIndex].value;
   $('body').toggleClass(bodyClass);
 });
+
+$(function(){
+  $('.city-change').click(function(){
+    $('.js-list').show(500);
+  });
+  $('.change').click(function(){
+    var city = $(this).attr('data-city');
+        cityText = $(this).text();
+    $('body').removeClass();
+    $('body').addClass(city);
+    $('.city-change').text(cityText);
+    $('.js-list').hide(500);
+
+  });
+});

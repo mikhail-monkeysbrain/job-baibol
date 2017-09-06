@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body class="msk">
   <header id="header">
     <div class="burger-menu">
       <div class="burger"></div>
@@ -36,7 +36,11 @@
         <div class="contacts"><a href="tel:88005505757" class="phone">
              
             8 (800) 550-57-57<br/><span class="phone__for-free">	Бесплатный звонок по всей России</span></a></div>
-        <div class="city">Ваш город: <a href="">Санкт-Петербург</a></div>
+        <div class="city">Ваш город: <a class="city-change">Москва</a>
+          <div class="js-list">
+            <div class="list"><a data-city="msk" class="change">Москва</a><a data-city="spb" class="change">Санкт-Петербург</a><a data-city="vld" class="change">Владивосток</a><a data-city="irc" class="change">Иркутск</a></div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>

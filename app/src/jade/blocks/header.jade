@@ -35,4 +35,10 @@ header#header
 					span.phone__for-free
 						|	Бесплатный звонок по всей России
 			.city Ваш город: 
-				a(href="") Санкт-Петербург
+				a.city-change Москва
+				.js-list
+					.list
+						a(data-city='msk').change Москва
+						a(data-city='spb').change Санкт-Петербург
+						a(data-city='vld').change Владивосток
+						a(data-city='irc').change Иркутск
