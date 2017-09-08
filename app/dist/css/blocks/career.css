@@ -5,8 +5,14 @@
   padding-top: 74px;
   padding-bottom: 180px;
 }
+@media screen and (max-width: 640px) {
+  .career iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
 .career .right {
-  margin-left: 125px;
+  margin-left: 12vw;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -23,6 +29,11 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 480px) {
+  .career .right {
+    margin-left: 8vw;
+  }
 }
 .career button {
   width: 283px;
@@ -99,4 +110,16 @@
   border-radius: 7px;
   width: 593px;
   height: 418px;
+}
+@media screen and (max-width: 640px) {
+  .video {
+    width: 460px !important;
+    height: 290px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .video {
+    width: 320px !important;
+    height: 190px !important;
+  }
 }

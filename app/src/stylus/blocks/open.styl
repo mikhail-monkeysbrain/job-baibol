@@ -5,6 +5,18 @@
 		width 100% !important
 .open
 	width 100%
+	.text__center::before
+		content: 'Салижан Шарипов, космонафт, герой России Кыргызстана';
+		position: absolute;
+		bottom: 3em;
+		left: calc(50% - 40em);
+		font-size: 14px;	
+	.text__center::after
+		content: 'Кавалер ордена Узбекистана и Таджикистана';
+		position: absolute;
+		bottom: 1.5em;
+		left: calc(50% - 40em);
+		font-size: 14px;
 	button
 		display none
 	h4
@@ -97,17 +109,3 @@
 		+media(768px)
 			margin-bottom 2em
 			
-.text__center::before
-	content: 'Салижан Шарипов, космонафт, герой России Кыргызстана';
-	position: absolute;
-	bottom: 3em;
-	left: calc(50% - 40em);
-	font-size: 14px;
-			
-.text__center::after
-	content: 'Кавалер ордена Узбекистана и Таджикистана';
-	position: absolute;
-	bottom: 1.5em;
-	left: calc(50% - 40em);
-	font-size: 14px;
-	

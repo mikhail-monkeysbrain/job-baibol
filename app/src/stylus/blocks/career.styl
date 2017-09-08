@@ -5,8 +5,12 @@
 	width 100%
 	padding-top 74px
 	padding-bottom 180px
+	iframe
+		+media(640px)
+			width 100% !important
+			height 100% !important
 	.right
-		margin-left 125px
+		margin-left 12vw
 		display -webkit-flex
 		display -moz-flex
 		display -ms-flex
@@ -14,6 +18,8 @@
 		display flex
 		flex-direction column
 		justify-content space-between
+		+media(480px)
+			margin-left 8vw
 	button
 		width 283px
 		height 61px
@@ -59,3 +65,9 @@
 	border-radius 7px
 	width 593px
 	height 418px 
+	+media(640px)
+		width 460px !important
+		height 290px !important
+	+media(480px)
+		width 320px !important
+		height 190px !important
