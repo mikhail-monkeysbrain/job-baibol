@@ -103,3 +103,14 @@ $(function(){
 
   });
 });
+
+
+
+$(function(){
+  $('.btn__red').click(function(){
+    $('.overlay').show(500);
+  });
+  $('.close').click(function(){
+    $('.overlay').hide(500);
+  });
+});
