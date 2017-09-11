@@ -200,6 +200,7 @@ section
 			right -50px 
 			top 0
 			background: #a0142d urL('../img/close.png') center  no-repeat
+			border-radius 5px
 			+media(1024px)
 				right 0
 			+media(640px)
@@ -216,6 +217,7 @@ form
 	justify-content space-around
 	align-items center
 	position relative
+	border-radius 5px 0 5px 5px
 	input
 		height 45px
 		width 90%
@@ -250,6 +252,14 @@ input[type="submit"]
 	right 0
 	top -1em 
 	padding 0
+	background #bc0c2a
+	color #fff
+	cursor pointer
+	transition .5s ease all
+	&:hover
+		color #bc0c2a
+		background: #fff
+		border 2px solid #bc0c2a		
 	+media(640px)
 		position relative
 		top 0  
