@@ -19,8 +19,18 @@ header#header
 					a(href="#section-4") О компании
 				li.menu--item
 					a(href="#open") Постройте карьеру
-				li.menu--item
-					a.menu--item__lang(href="#top") Русский
+				li.menu--item.language
+					a.menu--item__lang Русский
+					.js-list-language
+						ul.list
+							li
+								a(data-language='rus').change-lang Русский
+							li
+								a(data-language='taj').change-lang Tajik
+							li
+								a(data-language='uzb').change-lang o'zbek
+							li
+								a(data-language='kyr').change-lang Кыргызча
 				li.menu--item.hide__xl
 					.contacts
 						a(href="tel:88005505757").phone 

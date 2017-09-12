@@ -96,11 +96,17 @@ $(function(){
   $('.change').click(function(){
     var city = $(this).attr('data-city');
         cityText = $(this).text();
-    $('body').removeClass();
+    $('body').removeAttr('class');
     $('body').addClass(city);
     $('.city-change').text(cityText);
     $('.js-list').hide(500);
 
+  });
+});
+
+$(function(){
+  $('.menu--item__lang').click(function(){
+    $('.js-list-language').show(500);
   });
 });
 
